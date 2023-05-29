@@ -1,0 +1,21 @@
+<div class="">
+    <div class="body">
+        <img src="../../../assets/img/login.PNG" class="logo">
+        <h1>FutApp</h1>
+        <form (ngSubmit)="login()" [formGroup]="loginUsuario">
+            <div class="form-floating mb-3">
+                <input type="email" formControlName="email" class="form-control" placeholder="name@example.com">
+                <label>Correo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password"  formControlName="password" class="form-control" placeholder="Password">
+                <label>Contraseña</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-success btn-lg" type="submit">Ingresar</button>
+              </div>
+              <p class="mt-3">No tienes cuenta? <a routerLink="/registrar-usuario">Registar</a></p>
+              <!-- <a class="mt-3" routerLink="/recuperar-password">Recuperar contraseña</a> -->
+        </form>
+    </div>
+</div>
